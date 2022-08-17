@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Title from './components/Title'
+import Counter from './components/Counter'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	return (
+		<div className="app">
+			<Title priority={1}>
+				Base react
+			</Title>
+
+			<Counter initialValue={10} maxValue={15} minValue={7} />
+		</div>
+	)
 }
 
-export default App;
+export default App
